@@ -12,6 +12,7 @@ We were first introduced the partition method that the QuickSort method. We esta
 ## Runtime Classification
 
 ## Methodology
+Using a QuickSortTester, we decided to use System.nanoTime(), which returns the time in nanoseconds from the most accurate system timer available. Since the computer runs the sorting algorithm quickly on small arrays, we decided to use an array that have a size of 100 to an array that has a size of 9900. for a total of 90 arrays, incrementing the size of array by 100 for maximal results. We also decided to do 20 trials of the quick sort algorithm to make sure outliers don't affect our conclusions. We inserted System.nanoTime() right before the sort and right after the sort to make sure no other processes affect our data. We subtracted the time we got after the search and before the search to find out how long the search took. We then took the average times of the 20 trials for each array. We also used arrays that represented the best case, worst case, and average case to see how their runtimes compare and to see if it matches with our hypothesis.  
 
 ## Time Measurements and Analysis
   ![Average Case](Conditionneur/graph.JPG)
