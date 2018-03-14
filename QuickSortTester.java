@@ -1,3 +1,11 @@
+/*
+  We created an array ranging from size 100 to 9900, incremented by 100, 
+  to represent the situation for the average case, best case, and worst case.
+  Next we timed the quicksort of the array for 20 trials for each array and we 
+  found the average of the 20 trials.  
+*/
+
+
 public class QuickSortTester{
     public static void main(String[] args){
 	/*
