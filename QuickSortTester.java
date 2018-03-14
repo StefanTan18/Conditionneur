@@ -48,7 +48,7 @@ public class QuickSortTester{
 	}
 	*/
 	//worst case: The pivot is the smallest or largest element of the array. 
-        int sum3 = 0;
+        long sum3 = 0;
         for (int i = 0; i < 10000; i += 100){
 	    int[] arr3 = new int[i];
 	    for (int x = 0; x < i; x++) {
