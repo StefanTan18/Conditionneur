@@ -3,7 +3,7 @@
 
 public class QuickSortTester{
     public static void main(String[] args){
-
+	/*
 	//average case
         int sum1 = 0;
 	for (int i = 0; i < 10000; i += 100){
@@ -21,7 +21,8 @@ public class QuickSortTester{
 	    }
 	    System.out.print(i + "," + (sum1 / 20.) + "\n");
 	}
-	/*
+	*/
+
 	//best case: The pivot is the median of the array.
 	int sum2 = 0;
 	for (int i = 0; i < 10000; i += 100){
@@ -40,7 +41,7 @@ public class QuickSortTester{
 	    }
 	    System.out.print(i + "," + (sum2 / 20.) + "\n");
 	}
-  
+	/*
 	//worst case: The pivot is the smallest or largest element of the array. 
         int sum3 = 0;
 	for (int i = 0; i < 10000; i += 100){
