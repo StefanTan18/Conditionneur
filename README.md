@@ -6,6 +6,6 @@ Lynne Wang, Cheryl Qian, Stefan Tan
 ## Methodology
 
 ## Time Measurements and Analysis
-  ![Average Case](~Desktop/graph.JPG)
+  ![Average Case](Conditionneur/graph.JPG)
 
 ## Pivot Selection and Data Arrangement
