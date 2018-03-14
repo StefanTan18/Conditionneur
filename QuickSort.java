@@ -82,11 +82,23 @@ public class QuickSort
 	qsort(d, 0, d.length - 1);
     }
 
+    /*
     public static void qsort( int[] d, int lo, int hi )
     { 
 	int med = (lo + hi) / 2; //pivot is median (middle index)
 	if (lo < hi) {
 	    int pivot = partition(d, lo, hi, med); //partitions array, returns pivot
+	    qsort(d, lo, pivot - 1); //left side
+	    qsort(d, pivot + 1, hi); //right side
+	}
+    }
+    */
+
+    //pivot is largest index
+    public static void qsort( int[] d, int lo, int hi )
+    { 
+	if (lo < hi) {
+	    int pivot = partition(d, lo, hi, hi); //partitions array, returns pivot
 	    qsort(d, lo, pivot - 1); //left side
 	    qsort(d, pivot + 1, hi); //right side
 	}
