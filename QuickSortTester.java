@@ -1,6 +1,3 @@
-
-	
-
 public class QuickSortTester{
     public static void main(String[] args){
 	/*
@@ -44,14 +41,16 @@ public class QuickSortTester{
 	*/
 	//worst case: The pivot is the smallest or largest element of the array. 
         int sum3 = 0;
-	for (int i = 100; i < 10000; i += 100){
-	    int[] arr3 = (QuickSort.buildArray(i, i));
+        for (int i = 0; i < 10000; i += 100){
+	    int[] arr3 = new int[i];
+	    for (int x = 0; x < i; x++) {
+		arr3[x] = x;
+	    }
 	    for (int a = 0; a < 20; a++){
-		arr3[i/2] = i + 1;
 		long timeInit = System.nanoTime();
 		
-		QuickSort.qsort( arr3 );
-      
+		QuickSort.qsortL( arr3 );
+		
 		long timeFinal = System.nanoTime();
 		long timeOne = (timeFinal - timeInit);
 		sum3 += timeOne;
