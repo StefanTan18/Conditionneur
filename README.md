@@ -24,3 +24,9 @@ For our worst case scenario, we chose the largest index as the pivot and used qu
 
 ## Conclusions
 - Assessment of Big Oh Runtime:
+For our best and average case scenarios, the runtime was O(nlogn). The graphs were rather similar (our best case times were only fractionally faster than our average case times). For our worst case scenario, our time measurements were much larger than our average case time measurements. We concluded that for the worst case scenario, the runtime was O(n^2).
+
+- Pivot Selection and Data Arrangement
+If you choose the median index as the pivot, you can generally be confident that you won't reach the worst case scenario for any array. If you choose the smallest or largest index as the pivot, you will reach the worst scenario if your array is already sorted. If you choose a random index as a pivot, you also have a good chance of getting the average case scenario.
+
+If your data is shuffled (random order), there is a greater chance that you get the average case scenario. If your data is already sorted, there is a greater chance you get the worst case scenario if you choose the smallest or largest index as the pivot.
