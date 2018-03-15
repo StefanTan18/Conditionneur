@@ -20,7 +20,8 @@ For our worst case scenario, we chose the largest index as the pivot and used qu
 
 ## Results
 ![](Graphs/AvgCaseGraph.png)
-![](Graphs/BestCaseGraph.png)  
+![](Graphs/BestCaseGraph.png)
+![](Graphs/WorstCaseGraph.png)  
 
 ## Conclusions
 - Assessment of Big Oh Runtime:
